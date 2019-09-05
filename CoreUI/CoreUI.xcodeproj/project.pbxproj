@@ -10,6 +10,9 @@
 		327EAD492321070000E94926 /* CoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327EAD3F2321070000E94926 /* CoreUI.framework */; };
 		327EAD4E2321070000E94926 /* CoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327EAD4D2321070000E94926 /* CoreUITests.swift */; };
 		327EAD502321070000E94926 /* CoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 327EAD422321070000E94926 /* CoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		327EAD6723210F6F00E94926 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327EAD6523210F6F00E94926 /* ButtonViewController.swift */; };
+		327EAD6823210F6F00E94926 /* ButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327EAD6623210F6F00E94926 /* ButtonViewController.xib */; };
+		327EAD6C23210FC600E94926 /* ButtonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327EAD6B23210FC600E94926 /* ButtonError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		327EAD482321070000E94926 /* CoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		327EAD4D2321070000E94926 /* CoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreUITests.swift; sourceTree = "<group>"; };
 		327EAD4F2321070000E94926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327EAD6523210F6F00E94926 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		327EAD6623210F6F00E94926 /* ButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewController.xib; sourceTree = "<group>"; };
+		327EAD6B23210FC600E94926 /* ButtonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			children = (
 				327EAD422321070000E94926 /* CoreUI.h */,
 				327EAD432321070000E94926 /* Info.plist */,
+				327EAD6523210F6F00E94926 /* ButtonViewController.swift */,
+				327EAD6623210F6F00E94926 /* ButtonViewController.xib */,
+				327EAD6B23210FC600E94926 /* ButtonError.swift */,
 			);
 			path = CoreUI;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					327EAD3E2321070000E94926 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					327EAD472321070000E94926 = {
 						CreatedOnToolsVersion = 10.3;
@@ -177,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327EAD6823210F6F00E94926 /* ButtonViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327EAD6C23210FC600E94926 /* ButtonError.swift in Sources */,
+				327EAD6723210F6F00E94926 /* ButtonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +354,7 @@
 		327EAD542321070000E94926 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.CoreUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +380,7 @@
 		327EAD552321070000E94926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +405,7 @@
 		327EAD572321070000E94926 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +423,7 @@
 		327EAD582321070000E94926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
